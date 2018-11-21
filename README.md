@@ -5,7 +5,7 @@ Here are the key files in these projects:
 This is the client.
 1) [BarContentTypeDefinition.cs](demoLSP/BarContentTypeDefinition.cs) - Defines and registers a contenttype (in this case any file with the extension __".bar"__).
 2) [BarLanguageClient.cs](demoLSP/BarLanguageClient.cs) - client for the LSP extension. Activation is handled in ActivateAsync. Explicitly locates and starts server. Client-server communication is over named pipes.
-3) [source.extension.manifest](demoLSP/source.extension.manifest) - VSIX manifest file, identifying required assets, etc.
+3) [source.extension.vsixmanifest](demoLSP/source.extension.vsixmanifest) - VSIX manifest file, identifying required assets, etc.
 
 ## Project "demoLSPServerUI"
 This is the server.
