@@ -12,7 +12,7 @@ This is the server.
 1) [MainWindowViewModel.cs](demoLSPServerUI/MainWindowViewModel.cs) - represents the server process. Uses the same pipes (above) to connect to the client.
 the language service implemention is split across the following 2 classes:
 2) [LanguageServer.cs](demoLSPServerUI/LanguageServer.cs) - this is the server implementation that will communicate back
-3) [LanguageServerTarget.cs](demoLSPServerUI/LanguageServerTarget.cs) - methods on this class will receive notifications and act upon them. The Initialize implementation here will be used to report back the capabilities of our language service. In this case, we will support only hover. Accordingly when the user is hovering over text in the editor we will receive a notification on OnTestDocumentHover(...) here.
+3) [LanguageServerTarget.cs](demoLSPServerUI/LanguageServerTarget.cs) - methods on this class will receive notifications and act upon them. The Initialize implementation here will be used to report back the capabilities of our language service. In this case, we will support only hover. Accordingly when the user is hovering over text in the editor we will receive a notification on `OnTestDocumentHover(...)` here.
 
 ### Usage
 1) Open demoLSP.sln in Visual Studio (please use VS 15.9).
