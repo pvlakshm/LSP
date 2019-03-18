@@ -15,7 +15,7 @@ the language service implemention is split across the following 2 classes:
 3) [LanguageServerTarget.cs](demoLSPServerUI/LanguageServerTarget.cs) - methods on this class will receive notifications and act upon them. The Initialize implementation here will be used to report back the capabilities of our language service. In this case, we will support only hover. Accordingly when the user is hovering over text in the editor we will receive a notification on `OnTestDocumentHover(...)` here.
 
 ### Usage
-1) Open demoLSP.sln in Visual Studio (please use VS 15.9).
+1) Open demoLSP.sln in Visual Studio (please use VS 15.9 or above).
 2) Hit Ctrl F5 to start. Build should succeed, and an experimental instance of VS will start (VS-Exp).
 3) In VS-Exp, locate the file "test.bar" and open it - you should see a file with "test" written twice.
 This will cause our extension to be activated, which in turn will launch the LSP server. A window will pop up -(minimize it)
